@@ -12,6 +12,7 @@ class Employee {
     Gender gender;
     double salary;// salary per month
 
+    //score:2/2
     // Constructor. Please set all the data in constructor.
     public Employee(String name, int age, Gender gender, double salary) {
         this.name = name;
@@ -41,7 +42,7 @@ enum Gender {
     FEMALE;
 }
 
-
+//score:2/2
 public class Assignment2 {
     // Assignment
 
@@ -58,7 +59,7 @@ public class Assignment2 {
         }
 
     }
-
+// Score:2/2
     /**
      * Write a method to calculate an employee's contribution for insurance coverage and print it.
      * Amount of deduction is computed as follows:
@@ -78,7 +79,7 @@ public class Assignment2 {
             return (employee.salary * 0.06);
         }
     }
-
+//Score:2/2
     /**
      * Write a method to sort three employees' salary from low to high, and then print their name in order.
      * For example, Alice's salary is 1000, John's salary is 500, Jenny's salary is 1200, you should print:
@@ -113,11 +114,15 @@ public class Assignment2 {
      * Do not change the input of this method.
      * Try to add a new method in Employee class: public void raiseSalary(double byPercent)
      */
+    
+    //Score: 1/2
+    //comment: from your raiseSalary method : salary *= (1 + 0.01 * x), answer would not be 3000.
+    
     public void tripleSalary(Employee employee) {
         employee.salary *= 3;
     }
 
-
+//score:2/2
     //Extra credit
 
     /**
