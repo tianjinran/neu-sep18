@@ -12,6 +12,8 @@ public class Assignment4 {
      * s = "leetcode" return 0.
      * s = "loveleetcode" return 2.
      */
+    
+    //score 2/2 
     public int firstUniqChar(String s) {
         for(int i=0; i<s.length(); i++){
             if(s.substring(i+1).contains(s.substring(i,i+1)) || s.substring(0,i).contains(s.substring(i,i+1))){
@@ -46,6 +48,7 @@ public class Assignment4 {
      *  Given an array nums, write a function to move all 0's to the end of it while maintaining the relative order of the non-zero elements.
      *  Input: [0,1,0,3,12] Output: [1,3,12,0,0]
      */
+    //score 1.5/2  wrong answer 
     public void moveZeroes(int[] nums) {
         int count = 0;
         int[] result = new int[nums.length];
@@ -61,6 +64,8 @@ public class Assignment4 {
      * Given a string s, find the longest palindromic substring in s. You may assume that the maximum length of s is 1000.
      * Input: "babad" Output: "bab" Note: "aba" is also a valid answer.
      */
+    
+    //score 2/2 
     public String longestPalindrome(String s) {
         if (s == null || s.length() < 1)
             return "";
@@ -98,7 +103,7 @@ public class Assignment4 {
 
 
 
-
+//score 2/2 
     public int[][] rotate(int[][] matrix) {
 
         int totalRowsOfRotatedMatrix = matrix[0].length; //Total columns of Original Matrix
